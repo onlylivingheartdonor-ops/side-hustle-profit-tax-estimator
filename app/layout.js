@@ -2,11 +2,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Side Hustle Profit and Tax Estimator</title>
-        <meta
-          name="description"
-          content="Estimate side hustle profit and taxes after expenses. Designed for freelancers, gig workers, and independent contractors."
-        />
+        <title>TOOL TITLE</title>
+        <meta name="description" content="TOOL DESCRIPTION" />
 
         <script
           async
@@ -18,3 +15,4 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+
