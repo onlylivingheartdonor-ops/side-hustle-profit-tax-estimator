@@ -184,8 +184,24 @@ export default function Page() {
         </ul>
         <p>By treating tax planning as part of your normal routine, you avoid surprises and stay in control of your finances.</p>
       </div>
+{/* FOOTER */}
+<div style={{ fontSize:"0.9rem" }}>
+  <span
+    onClick={()=>window.location.href="/privacy"}
+    style={{cursor:"pointer",textDecoration:"underline"}}
+  >
+    Privacy Policy
+  </span>{" "}
+  |{" "}
+  <span
+    onClick={()=>window.location.href="/terms"}
+    style={{cursor:"pointer",textDecoration:"underline"}}
+  >
+    Terms of Service
+  </span>
+</div>
 
-      {/* RELATED */}
+     {/* RELATED */}
       <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
         <h2>Related Tools</h2>
   <ul>
