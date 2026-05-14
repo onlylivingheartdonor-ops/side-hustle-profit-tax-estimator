@@ -69,7 +69,7 @@ export default function Page() {
         <input value={otherIncome} onChange={(e)=>setOtherIncome(e.target.value)} style={{ width:"100%", padding:"8px", marginBottom:"0.5rem" }} />
 
         <p style={{ fontSize:"0.9rem", marginBottom:"1rem" }}>
-          If you have income from a job or other sources, you can include it here. This helps estimate your overall tax bracket more accurately. Your side income may be taxed at a higher rate depending on your total income.
+          If you have income from a job or other sources, you can include it here.
         </p>
 
         <button onClick={calculate} style={{ padding:"10px 15px", background:"#0070f3", color:"#fff", border:"none", borderRadius:"5px" }}>
@@ -114,160 +114,59 @@ export default function Page() {
         </table>
 
         <p style={{ marginTop:"1rem" }}>
-          These are simplified estimates. Actual tax rates depend on deductions, filing status, and other factors.
+          These are simplified estimates.
         </p>
       </div>
 
-      {/* HOW IT WORKS */}
-      <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
-        <h2>How This Works</h2>
-        <p>This tool estimates how much you may owe in taxes based on your income and expenses from self-employment or side hustle activities.</p>
-        <p>When you enter your total income and subtract your business-related expenses, the tool calculates your estimated net income. From there, it estimates:</p>
-        <ul>
-          <li>Self-employment tax (which covers Social Security and Medicare)</li>
-          <li>Federal income tax (based on simplified bracket assumptions)</li>
-          <li>A combined estimate of total taxes owed</li>
-        </ul>
-        <p>It also provides guidance on how much you may want to set aside and what your quarterly tax payments could look like.</p>
-        <p>This gives you a practical view of your real earnings after taxes — not just your gross income.</p>
-      </div>
-
-      {/* WHY */}
-      <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
-        <h2>Why This Is Useful</h2>
-        <p>One of the biggest challenges with side income is that taxes are not automatically withheld.</p>
-        <p>Many people underestimate how much they owe and end up with an unexpected tax bill at the end of the year.</p>
-        <p>This tool helps you:</p>
-        <ul>
-          <li>Estimate your true take-home income</li>
-          <li>Avoid underpaying taxes</li>
-          <li>Plan ahead with savings targets</li>
-          <li>Understand how expenses reduce taxable income</li>
-        </ul>
-        <p>Instead of guessing, you can make informed decisions about pricing, spending, and saving.</p>
-      </div>
-
-      {/* OTHER APPROACHES */}
+      {/* CONTENT BLOCKS */}
       <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
         <h2>Other Successful Approaches</h2>
         <p>There are several practical strategies that experienced freelancers and self-employed individuals use to stay on top of taxes:</p>
         <ul>
-          <li>A percentage-based approach involves consistently setting aside a fixed percentage (often 25–35%) of all income to cover taxes.</li>
-          <li>A quarterly planning approach involves estimating taxes throughout the year and making payments every three months instead of facing a lump sum later.</li>
-          <li>A separate tax account strategy helps prevent accidentally spending tax funds.</li>
-          <li>Income smoothing helps manage fluctuations across high and low earning periods.</li>
+          <li>Set aside a percentage (25–35%)</li>
+          <li>Make quarterly payments</li>
+          <li>Use a separate tax account</li>
+          <li>Smooth income fluctuations</li>
         </ul>
       </div>
 
-      {/* REDUCE TAX */}
       <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
         <h2>How to Reduce and Control Your Tax Burden</h2>
         <ul>
-          <li>Track all business expenses</li>
-          <li>Separate personal and business finances</li>
+          <li>Track expenses</li>
+          <li>Separate finances</li>
           <li>Use retirement contributions</li>
-          <li>Keep detailed documentation</li>
-          <li>Time purchases strategically</li>
+          <li>Keep documentation</li>
         </ul>
-        <p>Small deductions add up over time, and consistent recordkeeping prevents missed opportunities.</p>
       </div>
 
-      {/* PLAN */}
       <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
         <h2>How to Plan Ahead</h2>
         <ul>
-          <li>Set aside 25–30% of income</li>
+          <li>Set aside 25–30%</li>
           <li>Make quarterly payments</li>
-          <li>Track income and expenses regularly</li>
-          <li>Use separate accounts</li>
-          <li>Review monthly</li>
+          <li>Track regularly</li>
         </ul>
-        <p>By treating tax planning as part of your normal routine, you avoid surprises and stay in control of your finances.</p>
       </div>
-{/* FOOTER */}
-<div style={{ fontSize:"0.9rem" }}>
-  <span
-    onClick={()=>window.location.href="/privacy"}
-    style={{cursor:"pointer",textDecoration:"underline"}}
-  >
-    Privacy Policy
-  </span>{" "}
-  |{" "}
-  <span
-    onClick={()=>window.location.href="/terms"}
-    style={{cursor:"pointer",textDecoration:"underline"}}
-  >
-    Terms of Service
-  </span>
-</div>
 
-     {/* RELATED */}
+      {/* RELATED */}
       <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
         <h2>Related Tools</h2>
-  <ul>
-    <li onClick={() => window.location.href = "https://creditcarddebtpayoffcalculator.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Credit Card Debt Payoff Calculator
-    </li>
-    <li onClick={() => window.location.href = "https://debtreducingcalculator.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Debt Reducing Calculator
-    </li>
-    <li onClick={() => window.location.href = "https://sidehustletaxestimator.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Side Hustle Tax Estimator
-    </li>
-    <li onClick={() => window.location.href = "https://highyieldsavingscalculator.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      High Yield Savings Calculator
-    </li>
-    <li onClick={() => window.location.href = "https://retirementsavingsgap.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Retirement Savings Gap
-    </li>
-    <li onClick={() => window.location.href = "https://lifeinsurancecoveragecalculator.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Life Insurance Coverage Calculator
-    </li>
-    <li onClick={() => window.location.href = "https://onlinecourseroi.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Online Course ROI Calculator
-    </li>
-    <li onClick={() => window.location.href = "https://mysubscriptioncost.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Subscription Cost Calculator
-    </li>
-    <li onClick={() => window.location.href = "https://emailattachmentsize.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Email Attachment Size Checker
-    </li>
-    <li onClick={() => window.location.href = "https://gpacalculator.site"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      GPA Calculator
-    </li>
-    <li onClick={() => window.location.href = "https://youtubetitlechecker.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      YouTube Title Checker
-    </li>
-    <li onClick={() => window.location.href = "https://strongpasswordbuilder.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Strong Password Builder
-    </li>
-    <li onClick={() => window.location.href = "https://coolusernamegenerator.com"} style={{ cursor: "pointer", textDecoration: "underline" }}>
-      Cool Username Generator
-    </li>
-  </ul>
-</div>
+        <ul>
+          <li onClick={()=>window.location.href="https://creditcarddebtpayoffcalculator.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Credit Card Debt Payoff Calculator</li>
+          <li onClick={()=>window.location.href="https://debtreducingcalculator.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Debt Reducing Calculator</li>
+          <li onClick={()=>window.location.href="https://mysubscriptioncost.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Subscription Cost Calculator</li>
+          <li onClick={()=>window.location.href="https://emailattachmentsize.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Email Attachment Size Checker</li>
+        </ul>
       </div>
 
-      <div style={{ marginTop: "1rem", fontSize: "13px", color: "#666" }}>
-        This tool provides estimates for informational purposes only.
-      </div>
-
-      <div style={{ marginTop: "1.5rem", fontSize: "13px", color: "#555" }}>
-        This site may use cookies and analytics. By using this site,
-        you agree to our Privacy Policy and Terms of Service.
-      </div>
-
-      <div style={{
-        marginTop: "1rem",
-        paddingTop: "1rem",
-        borderTop: "1px solid #e2e8f0",
-        fontSize: "14px"
-      }}>
-        <span onClick={() => window.location.href = "/privacy"} style={{ cursor: "pointer", textDecoration: "underline" }}>
+      {/* FOOTER */}
+      <div style={{ fontSize:"0.9rem" }}>
+        <span onClick={()=>window.location.href="/privacy"} style={{cursor:"pointer",textDecoration:"underline"}}>
           Privacy Policy
         </span>
         {" | "}
-        <span onClick={() => window.location.href = "/terms"} style={{ cursor: "pointer", textDecoration: "underline" }}>
+        <span onClick={()=>window.location.href="/terms"} style={{cursor:"pointer",textDecoration:"underline"}}>
           Terms of Service
         </span>
       </div>
@@ -275,3 +174,4 @@ export default function Page() {
     </main>
   )
 }
+
