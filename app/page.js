@@ -54,7 +54,7 @@ export default function Page() {
       minHeight:"100vh",
       fontFamily:"system-ui, -apple-system, sans-serif"
     }}>
-      
+
       {/* TOOL */}
       <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
         <h1>Side Hustle Tax Estimator</h1>
@@ -83,9 +83,11 @@ export default function Page() {
             <p><strong>Estimated Federal Tax:</strong> ${results.federalTax.toFixed(2)}</p>
             <p><strong>Total Estimated Tax:</strong> ${results.totalTax.toFixed(2)}</p>
             <p><strong>Estimated Tax Bracket:</strong> {(results.federalRate * 100).toFixed(0)}%</p>
+
             <p style={{ marginTop:"1rem" }}>
               <strong>Recommended Set-Aside:</strong> ${results.recommendLow.toFixed(0)} – ${results.recommendHigh.toFixed(0)}
             </p>
+
             <p><strong>Quarterly Payment:</strong> ${results.quarterly.toFixed(2)}</p>
           </div>
         )}
@@ -145,34 +147,63 @@ export default function Page() {
         <p>Instead of guessing, you can make informed decisions about pricing, spending, and saving.</p>
       </div>
 
+      {/* OTHER APPROACHES */}
+      <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
+        <h2>Other Successful Approaches</h2>
+        <p>There are several practical strategies that experienced freelancers and self-employed individuals use to stay on top of taxes:</p>
+        <ul>
+          <li>A percentage-based approach involves consistently setting aside a fixed percentage (often 25–35%) of all income to cover taxes.</li>
+          <li>A quarterly planning approach involves estimating taxes throughout the year and making payments every three months instead of facing a lump sum later.</li>
+          <li>A separate tax account strategy helps prevent accidentally spending tax funds.</li>
+          <li>Income smoothing helps manage fluctuations across high and low earning periods.</li>
+        </ul>
+      </div>
+
+      {/* REDUCE TAX */}
+      <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
+        <h2>How to Reduce and Control Your Tax Burden</h2>
+        <ul>
+          <li>Track all business expenses</li>
+          <li>Separate personal and business finances</li>
+          <li>Use retirement contributions</li>
+          <li>Keep detailed documentation</li>
+          <li>Time purchases strategically</li>
+        </ul>
+        <p>Small deductions add up over time, and consistent recordkeeping prevents missed opportunities.</p>
+      </div>
+
+      {/* PLAN */}
+      <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
+        <h2>How to Plan Ahead</h2>
+        <ul>
+          <li>Set aside 25–30% of income</li>
+          <li>Make quarterly payments</li>
+          <li>Track income and expenses regularly</li>
+          <li>Use separate accounts</li>
+          <li>Review monthly</li>
+        </ul>
+        <p>By treating tax planning as part of your normal routine, you avoid surprises and stay in control of your finances.</p>
+      </div>
+
       {/* RELATED */}
       <div style={{ background:"#fff", padding:"1.5rem", borderRadius:"10px", marginBottom:"1.5rem" }}>
         <h2>Related Tools</h2>
         <ul>
           <li onClick={()=>window.location.href="https://creditcarddebtpayoffcalculator.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Credit Card Debt Payoff Calculator</li>
           <li onClick={()=>window.location.href="https://debtreducingcalculator.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Debt Reducing Calculator</li>
-          <li onClick={()=>window.location.href="https://sidehustletaxestimator.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Side Hustle Tax Estimator</li>
-          <li onClick={()=>window.location.href="https://highyieldsavingscalculator.com"} style={{cursor:"pointer",textDecoration:"underline"}}>High Yield Savings Calculator</li>
-          <li onClick={()=>window.location.href="https://retirementsavingsgap.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Retirement Savings Gap</li>
-          <li onClick={()=>window.location.href="https://lifeinsurancecoveragecalculator.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Life Insurance Coverage Calculator</li>
-          <li onClick={()=>window.location.href="https://onlinecourseroi.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Online Course ROI Calculator</li>
           <li onClick={()=>window.location.href="https://mysubscriptioncost.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Subscription Cost Calculator</li>
           <li onClick={()=>window.location.href="https://emailattachmentsize.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Email Attachment Size Checker</li>
           <li onClick={()=>window.location.href="https://gpacalculator.site"} style={{cursor:"pointer",textDecoration:"underline"}}>GPA Calculator</li>
           <li onClick={()=>window.location.href="https://youtubetitlechecker.com"} style={{cursor:"pointer",textDecoration:"underline"}}>YouTube Title Checker</li>
-          <li onClick={()=>window.location.href="https://strongpasswordbuilder.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Strong Password Builder</li>
-          <li onClick={()=>window.location.href="https://coolusernamegenerator.com"} style={{cursor:"pointer",textDecoration:"underline"}}>Cool Username Generator</li>
         </ul>
       </div>
 
       {/* FOOTER */}
       <div style={{ fontSize:"0.9rem" }}>
-        <span onClick={()=>window.location.href="/privacy"} style={{cursor:"pointer",textDecoration:"underline"}}>Privacy Policy</span>{" "}
-        |{" "}
+        <span onClick={()=>window.location.href="/privacy"} style={{cursor:"pointer",textDecoration:"underline"}}>Privacy Policy</span> |{" "}
         <span onClick={()=>window.location.href="/terms"} style={{cursor:"pointer",textDecoration:"underline"}}>Terms of Service</span>
       </div>
 
     </main>
   )
 }
-
