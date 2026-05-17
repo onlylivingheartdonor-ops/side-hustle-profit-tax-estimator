@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { RELATED_LINKS as RELATED } from "./lib/links"
 
 const styles = {
@@ -79,8 +79,6 @@ const BRACKETS = [
   { min: 95000,  max: 182000,         rate: 0.24, label: "$95,001 – $182,000", display: "~24%" },
   { min: 182000, max: Infinity,       rate: 0.32, label: "$182,001+",          display: "32%+" },
 ]
-
-import { RELATED_LINKS as RELATED } from "./lib/links"
 
 function fmt(n) {
   return "$" + Math.round(n).toLocaleString("en-US")
@@ -221,7 +219,7 @@ export default function Page() {
           </table>
           <p className="she-active-amount">
             {live && activeBracket
-              ? `Estimated federal income tax at ${Math.round(activeBracket.rate * 100)}%: ${fmt(live.fed)}`
+              ? "Estimated federal income tax at " + Math.round(activeBracket.rate * 100) + "%: " + fmt(live.fed)
               : ""}
           </p>
           <p style={{ fontSize: "11px", color: "#888", marginTop: ".5rem" }}>
@@ -362,16 +360,16 @@ export default function Page() {
         {/* ========== MONEYWISE LINK — END ========== */}
 
         {/* RELATED */}
-        <div className="dr-card">
-          <p className="dr-section-title">Related tools</p>
-          <div className="dr-related-links">
+        <div className="she-card">
+          <p className="she-section-title">Related tools</p>
+          <div className="she-related-links">
             {RELATED.map((r, i) => (
-              <a key={i} className="dr-related-link" href={r.href}>{r.label}</a>
+              <a key={i} className="she-related-link" href={r.href}>{r.label}</a>
             ))}
           </div>
-          <div className="dr-disclaimer">
+          <div className="she-disclaimer">
             This tool provides estimates for informational purposes only and does not constitute financial advice. Results assume a fixed interest rate and fixed monthly payment for the full repayment period. This site may use cookies and analytics. By using this site, you agree to our Privacy Policy and Terms of Service.
-            <div className="dr-footer-links">
+            <div className="she-footer-links">
               <a href="/privacy">Privacy Policy</a>
               <a href="/terms">Terms of Service</a>
             </div>
