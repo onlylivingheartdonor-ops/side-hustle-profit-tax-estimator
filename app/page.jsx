@@ -1,10 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-<<<<<<< HEAD
 import { RELATED_LINKS as RELATED } from "./lib/links"
-=======
->>>>>>> 7de89f5d5be87297f72801bb29e6198a2fab0c95
 
 const styles = {
   dmFont: `@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap');`,
@@ -83,25 +80,6 @@ const BRACKETS = [
   { min: 182000, max: Infinity,       rate: 0.32, label: "$182,001+",          display: "32%+" },
 ]
 
-<<<<<<< HEAD
-=======
-const RELATED = [
-  { label: "Credit Card Debt Payoff Calculator",  href: "https://creditcarddebtpayoffcalculator.com" },
-  { label: "Debt Reducing Calculator",            href: "https://debtreducingcalculator.com" },
-  { label: "Side Hustle Tax Estimator",           href: "https://sidehustletaxestimator.com" },
-  { label: "High Yield Savings Calculator",       href: "https://highyieldsavingscalculator.com" },
-  { label: "Retirement Savings Gap",              href: "https://retirementsavingsgap.com" },
-  { label: "Life Insurance Coverage Calculator",  href: "https://lifeinsurancecoveragecalculator.com" },
-  { label: "Online Course ROI Calculator",        href: "https://onlinecourseroi.com" },
-  { label: "Subscription Cost Calculator",        href: "https://mysubscriptioncost.com" },
-  { label: "Email Attachment Size Checker",       href: "https://emailattachmentsize.com" },
-  { label: "GPA Calculator",                      href: "https://gpacalculator.site" },
-  { label: "YouTube Title Checker",               href: "https://youtubetitlechecker.com" },
-  { label: "Strong Password Builder",             href: "https://strongpasswordbuilder.com" },
-  { label: "Cool Username Generator",             href: "https://coolusernamegenerator.com" },
-]
-
->>>>>>> 7de89f5d5be87297f72801bb29e6198a2fab0c95
 function fmt(n) {
   return "$" + Math.round(n).toLocaleString("en-US")
 }
@@ -241,11 +219,7 @@ export default function Page() {
           </table>
           <p className="she-active-amount">
             {live && activeBracket
-<<<<<<< HEAD
               ? "Estimated federal income tax at " + Math.round(activeBracket.rate * 100) + "%: " + fmt(live.fed)
-=======
-              ? `Estimated federal income tax at ${Math.round(activeBracket.rate * 100)}%: ${fmt(live.fed)}`
->>>>>>> 7de89f5d5be87297f72801bb29e6198a2fab0c95
               : ""}
           </p>
           <p style={{ fontSize: "11px", color: "#888", marginTop: ".5rem" }}>
@@ -374,7 +348,6 @@ export default function Page() {
           </div>
         </div>
 
-<<<<<<< HEAD
         {/* ========== MONEYWISE LINK — START ========== */}
         <div style={{ background: "#fff", border: "1px solid #e0dbd3", borderRadius: "4px", padding: "1rem 1.5rem", marginBottom: "1.5rem", textAlign: "center" }}>
           <p style={{ fontFamily: "'DM Mono', monospace", fontSize: "13px", color: "#888" }}>
@@ -387,9 +360,6 @@ export default function Page() {
         {/* ========== MONEYWISE LINK — END ========== */}
 
         {/* RELATED */}
-=======
-        {/* RELATED TOOLS */}
->>>>>>> 7de89f5d5be87297f72801bb29e6198a2fab0c95
         <div className="she-card">
           <p className="she-section-title">Related tools</p>
           <div className="she-related-links">
@@ -398,11 +368,7 @@ export default function Page() {
             ))}
           </div>
           <div className="she-disclaimer">
-<<<<<<< HEAD
             This tool provides estimates for informational purposes only and does not constitute financial advice. Results assume a fixed interest rate and fixed monthly payment for the full repayment period. This site may use cookies and analytics. By using this site, you agree to our Privacy Policy and Terms of Service.
-=======
-            This tool provides estimates for informational purposes only and does not constitute tax advice. Consult a qualified tax professional for your situation. This site may use cookies and analytics. By using this site, you agree to our Privacy Policy and Terms of Service.
->>>>>>> 7de89f5d5be87297f72801bb29e6198a2fab0c95
             <div className="she-footer-links">
               <a href="/privacy">Privacy Policy</a>
               <a href="/terms">Terms of Service</a>
