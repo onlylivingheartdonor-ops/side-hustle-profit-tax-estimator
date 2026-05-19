@@ -3,13 +3,13 @@ export const metadata = {
   description: "Estimate your self-employment taxes, federal income tax, and quarterly payments from side hustle or freelance income. See exactly what to set aside so tax season never surprises you.",
   
   alternates: {
-    canonical: "https:/https://www.sidehustletaxestimator.com",           // ← MUST CHANGE
+    canonical: "https://www.sidehustletaxestimator.com",           // ← MUST CHANGE
   },
 
   openGraph: {
     title: "Side Hustle Tax Estimator | Calculate What You'll Owe",
     description: "Estimate your self-employment taxes, federal income tax, and quarterly payments from side hustle or freelance income. See exactly what to set aside so tax season never surprises you.",
-    url: "https:/www.sidehustletaxestimator.com",                 // ← MUST CHANGE
+    url: "https://www.sidehustletaxestimator.com",                 // ← MUST CHANGE
     siteName: "Moneywise Calculators",             // ← Change
     images: [
       {
