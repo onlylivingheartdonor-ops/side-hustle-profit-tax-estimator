@@ -1,22 +1,22 @@
 export const metadata = {
   title: "Side Hustle Tax Estimator | Calculate What You'll Owe",
   description: "Estimate your self-employment taxes, federal income tax, and quarterly payments from side hustle or freelance income. See exactly what to set aside so tax season never surprises you.",
-  
+
   alternates: {
-    canonical: "https://www.sidehustletaxestimator.com",           // ← MUST CHANGE
+    canonical: "https://www.sidehustletaxestimator.com",
   },
 
   openGraph: {
     title: "Side Hustle Tax Estimator | Calculate What You'll Owe",
     description: "Estimate your self-employment taxes, federal income tax, and quarterly payments from side hustle or freelance income. See exactly what to set aside so tax season never surprises you.",
-    url: "https://www.sidehustletaxestimator.com",                 // ← MUST CHANGE
-    siteName: "Moneywise Calculators",             // ← Change
+    url: "https://www.sidehustletaxestimator.com",
+    siteName: "Side Hustle Tax Estimator",
     images: [
       {
-        url: "https://www.sidehustletaxestimator.com/og-image.png", // ← MUST CHANGE
+        url: "https://www.sidehustletaxestimator.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Side Hustle Tax Estimator",
+        alt: "Side Hustle Tax Estimator -- Calculate what you will owe",
       },
     ],
     locale: "en_US",
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Side Hustle Tax Estimator | Calculate What You'll Owe",
-    description: "Estimate your self-employment taxes, federal income tax, and quarterly payments from side hustle or freelance income. See exactly what to set aside so tax season never surprises you.",
+    description: "Estimate your self-employment taxes, federal income tax, and quarterly payments from side hustle or freelance income.",
   },
 
   robots: {
@@ -46,13 +46,7 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
 
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
-
-  authors: [{name: "David Graham" }],
+  authors: [{ name: "David Graham" }],
   creator: "MoneyWise Calculators",
   publisher: "MoneyWise Calculators",
 };
@@ -61,28 +55,37 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* AdSense */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3475627763908800"
           crossOrigin="anonymous"
         ></script>
-              <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              name: "side-hustle-profit-tax-estimator",
-              description: "Financial calculator tool",
-              url: "https://www.side-hustle-profit-tax-estimator.com",
-              applicationCategory: "Finance",
+              name: "Side Hustle Tax Estimator",
+              description: "Free tool to estimate self-employment taxes, federal income tax, and quarterly payments from side hustle or freelance income.",
+              url: "https://www.sidehustletaxestimator.com",
+              applicationCategory: "FinanceApplication",
               operatingSystem: "All",
-              offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }
+              browserRequirements: "Requires JavaScript",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD"
+              },
+              author: {
+                "@type": "Organization",
+                name: "MoneyWise Calculators",
+                url: "https://moneywisecalculator.com"
+              }
             }),
           }}
         />
-    </head>
+      </head>
       <body>{children}</body>
     </html>
   );
